@@ -1,0 +1,20 @@
+{
+    "plugins": [
+      "cypress"
+    ],
+    "extends": [
+      "../.eslint",
+      "plugin:cypress/recommended"
+    ],
+    "rules": {
+      // "cypress/no-assigning-return-values": "error",
+      // "cypress/no-async-tests": "error"
+      "cypress/no-unnecessary-waiting": "error",
+      "cypress/assertion-before-screenshot": "warn",
+      "cypress/no-force": "warn",
+      "prefer-arrow-callback":"off"
+    },
+    "env": {
+      "cypress/globals": true
+    }
+}  
